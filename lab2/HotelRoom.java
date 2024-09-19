@@ -7,10 +7,19 @@ class HotelRoom
     private int vacancy;
     private double rate;
 
+    // constructors
     public HotelRoom()
     {
         roomNumber = 0;
         roomType = "";
+    }
+
+    public HotelRoom(int rNum, String type, int vacant, double rate)
+    {
+        setNumber(rNum);
+        setType(type);
+        setVacant(vacant);
+        setRate(rate);
     }
 
     // setters
