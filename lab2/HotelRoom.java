@@ -3,6 +3,10 @@ class HotelRoom
     private int roomNumber;
     private String roomType;
 
+    // Question 2 update
+    private int vacancy;
+    private double rate;
+
     public HotelRoom()
     {
         roomNumber = 0;
@@ -21,10 +25,19 @@ class HotelRoom
         {
             roomType = type;
         }
-        else
+    }
+
+    public void setVacant(int num)
+    {
+        if ((num == 1) || (num == 2))
         {
-            roomType = "invalid type";
+            vacancy = num;
         }
+    }
+
+    public void setRate(double num)
+    {
+        rate = num;
     }
 
     // getters
@@ -36,5 +49,24 @@ class HotelRoom
     public String getType()
     {
         return roomType;
+    }
+
+    public String getVacant()
+    {
+        String result = "";
+        if (vacancy == 0)
+        {
+            result = "vacant";
+        }
+        else if (vacancy == 1)
+        {
+            result = "occupied";
+        }
+        return result;
+    }
+
+    public double getRate()
+    {
+        return rate;
     }
 }

@@ -1,4 +1,4 @@
-class Lab2q1
+class Lab2q2
 {
     public static void main(String[] args) 
     {
@@ -24,5 +24,21 @@ class Lab2q1
         System.out.println("Room B number is " + roomB.getNumber());
         System.out.println("Room B type is " + roomB.getType());
         System.out.println(); // new line
+
+        // updating roomA values
+        roomA.setVacant(1);
+        roomA.setRate(100);
+
+        // updating roomB values
+        roomB.setVacant(0);
+        roomB.setRate(80);
+
+        //printing roomA values
+        System.out.println("Room A is " + roomA.getVacant());
+        System.out.println("Room A rate is " + roomA.getRate());
+
+        // printing roomB values
+        System.out.println("Room B is " + roomB.getVacant());
+        System.out.println("Room B rate is " + roomB.getRate());
     }
 }
