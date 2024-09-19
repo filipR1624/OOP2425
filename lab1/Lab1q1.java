@@ -1,6 +1,6 @@
-// Student Name 	: Oisin Cawley
-// Student Id Number: 
-// Date 			: Nov-2015
+// Student Name 	: Filip Raguz
+// Student Id Number: C00301624
+// Date 			: 19th September
 // Purpose 			: My first class implementation
 
 public class Lab1q1
