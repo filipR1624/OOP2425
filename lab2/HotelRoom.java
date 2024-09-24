@@ -60,18 +60,16 @@ class HotelRoom
         return roomType;
     }
 
-    public String getVacant()
+    public boolean getVacant()
     {
-        String result = "";
         if (vacancy == 0)
         {
-            result = "vacant";
+            return false;
         }
-        else if (vacancy == 1)
+        else
         {
-            result = "occupied";
+            return true;
         }
-        return result;
     }
 
     public double getRate()
