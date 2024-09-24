@@ -1,3 +1,8 @@
+// Student Name 	: Filip Raguz
+// Student Id Number: C00301624
+// Date 			: 24th September
+// Purpose 			: Lab 2a Question 2
+
 class Lab2q2
 {
     public static void main(String[] args) 
