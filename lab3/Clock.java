@@ -14,12 +14,17 @@ public class Clock
         Calendar cal = Calendar.getInstance();
         Time t = new Time(cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE));
 
-        int count = 0;
-        long mil = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
 
-        while (count < 60)
+        for (int i = 1; i <= 60; i++)
         {
-            
+            long currentTime;
+            do
+            {
+                currentTime = System.currentTimeMillis();
+            } while (currentTime < startTime + (i * 1000));
+            t.tick();
+            System.out.println(t.toString());
         }
     }
 }
