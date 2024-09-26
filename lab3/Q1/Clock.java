@@ -3,7 +3,7 @@
 // Date 			: 24th September
 // Purpose 			: Lab 3 Question 1
 
-package lab3;
+package lab3.Q1;
 
 import java.util.Calendar;
 
