@@ -3,7 +3,7 @@
 // Date 			: 26th September
 // Purpose 			: My implementation of BankCustomer
 
-package lab3.Q2;
+package lab3.Q2_3;
 
 public class BankCustomer
 {
@@ -24,6 +24,11 @@ public class BankCustomer
         return name;
     }
 
+    public String getAddress()
+    {
+        return address;
+    }
+
     public void addAccount(SavingsAccount account)
     {
         if (noAccounts < 3)
@@ -42,6 +47,16 @@ public class BankCustomer
             balance += accounts[i].getBalance();
         }
         return balance;
+    }
+
+    public String toString()
+    {
+        String theString = "";
+        for (int i = 0; i < noAccounts; i++)
+        {
+            theString += "Account " + (i + 1) + " Balance: " + accounts[i].getBalance() + "\n";
+        }
+        return theString;
     }
 
 }

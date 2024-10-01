@@ -3,7 +3,7 @@
 // Date 			: 26th September
 // Purpose 			: Driver for BankCustomer
 
-package lab3.Q2;
+package lab3.Q2_3;
 
 public class Driver2
 {
@@ -20,5 +20,6 @@ public class Driver2
         customer.addAccount(acc3);
 
         System.out.println(customer.getName() + " has: " + customer.balance() + " moneyz");
+        System.out.println(customer.toString());
     }
 }

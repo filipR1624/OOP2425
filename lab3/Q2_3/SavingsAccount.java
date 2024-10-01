@@ -3,7 +3,7 @@
 // Date 			: 26th September
 // Purpose 			: My implementation of SavingsAccount
 
-package lab3.Q2;
+package lab3.Q2_3;
 
 public class SavingsAccount
 {
@@ -15,6 +15,11 @@ public class SavingsAccount
     {
         accountNumber = accountNumber + 1;
         savingsBalance = balance;
+    }
+
+    public int getAccNo()
+    {
+        return accountNumber;
     }
 
     public double calculateMonthlyInterest()
