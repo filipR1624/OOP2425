@@ -3,13 +3,35 @@
 // Date 			: 1st October
 // Purpose 			: My implementation of MyHR
 
-class MyHR
+package lab4;
+
+public class MyHR
 {
-    private static int roomNumber = 100;
+    private Office[] offices;
 
     public MyHR()
     {
-        
+        offices = new Office[3];
+        for (int i = 0; i < 3; i++)
+        {
+            offices[i] = new Office();
+        }
+    }
+
+    public void createNewRecord()
+    {
+        Employee employee = new Employee();
+    }
+
+    // list the offices
+    public String toString()
+    {
+        String theString = "";
+        for (int i = 0; i < 3; i++)
+        {
+            theString += "Office " + (i + 1) + ": " + offices[i].getRoomNo() + "\n";
+        }
+        return theString;
     }
 }
 

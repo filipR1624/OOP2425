@@ -7,13 +7,13 @@ package lab3.Q2_3;
 
 public class SavingsAccount
 {
-    static private int accountNumber = 0;
-    static private double annualInterestRate;
+    private int accountNumber = 0;
+    private static double annualInterestRate;
     private double savingsBalance;
 
     public SavingsAccount(double balance)
     {
-        accountNumber = accountNumber + 1;
+        accountNumber++;
         savingsBalance = balance;
     }
 
