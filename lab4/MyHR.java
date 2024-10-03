@@ -18,12 +18,31 @@ public class MyHR
         }
     }
 
-    public void createNewRecord()
+    // Option 2: create new employee record
+    public void createNewRecord(String type, Address address)
     {
-        Employee employee = new Employee();
+        Employee employee = new Employee(type, address);
+        int i = 0;
+
+        while (i < 3)
+        {
+            if (offices[i].getEmployees() < 2)
+            {
+                offices[i].setEmployee(employee);
+            }
+            else
+            {
+                i++;
+            }
+        }
     }
 
-    // list the offices
+    public Office officeEmployees(int officeNo)
+    {
+        return offices[officeNo - 1];
+    }
+
+    // Option 1: list all offices
     public String toString()
     {
         String theString = "";

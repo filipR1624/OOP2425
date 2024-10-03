@@ -55,4 +55,9 @@ public class Address
     {
         return county;
     }
+
+    public String toString()
+    {
+        return "Address: " + street + ", " + city + ", " + county;
+    }
 }
