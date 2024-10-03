@@ -22,17 +22,13 @@ public class MyHR
     public void createNewRecord(String type, Address address)
     {
         Employee employee = new Employee(type, address);
-        int i = 0;
 
-        while (i < 3)
+        for (int i = 0; i < offices.length; i++)
         {
             if (offices[i].getEmployees() < 2)
             {
-                offices[i].setEmployee(employee);
-            }
-            else
-            {
-                i++;
+                offices[i].addEmployee(employee);
+                break;
             }
         }
     }
@@ -52,5 +48,15 @@ public class MyHR
         }
         return theString;
     }
+
+     public String getOfficeDetails(int officeNo)
+     {
+        String output = "";
+        if ((officeNo >= 1) || (officeNo <= 3))
+        {
+            output += offices[officeNo - 1].toString();
+        }
+        return output;
+     }
 }
 

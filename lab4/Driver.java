@@ -32,7 +32,7 @@ public class Driver
         System.out.println(test);
 
         System.out.print("Select office (to list employees): ");
-        System.out.println(test.officeEmployees(scan.nextInt()));
+        System.out.println(test.getOfficeDetails(scan.nextInt()));
         scan.close();      
     }
 }

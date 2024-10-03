@@ -24,14 +24,13 @@ public class Office
         roomNo = num;
     }
 
-    public void setEmployee(Employee employee)
+    public void addEmployee(Employee employee)
     {
         if (currentEmployees < 2)
         {
             employees[currentEmployees] = employee;
             currentEmployees++;
         }
-
     }
 
     public int getRoomNo()
