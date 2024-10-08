@@ -54,7 +54,7 @@ public class BankCustomer
         String theString = "";
         for (int i = 0; i < noAccounts; i++)
         {
-            theString += "Account " + (i + 1) + " Balance: " + accounts[i].getBalance() + "\n";
+            theString += "Account " + accounts[i].getAccNo() + " Balance: " + accounts[i].getBalance() + "\n";
         }
         return theString;
     }

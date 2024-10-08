@@ -7,19 +7,21 @@ package lab3.Q2_3;
 
 public class SavingsAccount
 {
-    private int accountNumber = 0;
+    private static int accountNumber = 0;
+    private int currentAccount;
     private static double annualInterestRate;
     private double savingsBalance;
 
     public SavingsAccount(double balance)
     {
         accountNumber++;
+        currentAccount = accountNumber;
         savingsBalance = balance;
     }
 
     public int getAccNo()
     {
-        return accountNumber;
+        return currentAccount;
     }
 
     public double calculateMonthlyInterest()
