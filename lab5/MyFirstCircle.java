@@ -1,3 +1,8 @@
+// Author : Filip Raguz
+// Date : 8th October
+// Purpose : Driver from Blackboard (to test Circle and Point)
+
+
 package lab5;
 
 public class MyFirstCircle

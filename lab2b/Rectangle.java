@@ -1,3 +1,8 @@
+// Student Name 	: Filip Raguz
+// Student Id Number: C00301624
+// Date 			: 24th September
+// Purpose 			: My implementation of Rectangle
+
 class Rectangle
 {
     private double length;
