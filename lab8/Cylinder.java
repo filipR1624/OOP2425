@@ -2,7 +2,7 @@ package lab8;
 
 import java.lang.Math;
 
-public class Cylinder extends Shape {
+public class Cylinder extends ThreeDShape {
     private int radius;
     private int height;
 
@@ -14,5 +14,9 @@ public class Cylinder extends Shape {
 
     public double area() {
         return (2 * Math.PI * radius * height) + (2 * Math.PI * radius * radius);
+    }
+
+    public double volume() {
+        return Math.PI * radius * radius * height;
     }
 }

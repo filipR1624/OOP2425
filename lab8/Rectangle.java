@@ -1,6 +1,6 @@
 package lab8;
 
-public class Rectangle extends Shape{
+public class Rectangle extends TwoDShape{
     private double width;
     private double length;
 
