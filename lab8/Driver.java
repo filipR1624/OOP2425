@@ -51,5 +51,11 @@ public class Driver
   		System.out.println("\n---Using threeDShape superclass reference for a sphere " + threeDShape.toString());
   		System.out.println("Sphere area = " + threeDShape.area());   //polymorphic call using superclass reference
   		System.out.println("Cylinder volume = " + threeDShape.volume());  //polymorphic call using superclass reference
+
+		Triangle triangle = new Triangle("Triangle One", "Brown", 3, 5);
+		shape = triangle;
+
+		System.out.println("\n---Using shape superclass reference for a triangle " + shape.toString());
+  		System.out.println("Triangle area = " + shape.area());   //polymorphic call using superclass reference
   	}
 }
