@@ -2,7 +2,7 @@
 // Date : 26th November
 // Purpose : The driver program for lab9
 
-public class Driver {
+public class Driver1 {
     public static void main(String[] args) {
         // the LibraryItem array
         LibraryItem[] items = new LibraryItem[2];
